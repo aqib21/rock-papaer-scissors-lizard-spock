@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #222;
+    text-align: center;
+    color: aliceblue;
+}
+
+header{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+#title{
+    margin-bottom: 10px;
+}
+
+.score{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    width: 125px;
+}
+
+#player-score, #computer-score{
+    width: 25px;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section{
+    width: 500px;
+    height: 500px;
+}
+
+.icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25%;
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+    background-size: 100%;
+    transition: background-size ease-in 0.1s;
+}
+
+.icon:hover{
+    background-size: 85%;
+}
+
+.icon:active{
+    background-size: 95%;
+}
+
+#ROCK{
+    background-image: url("img/rock.png");
+    left: 37%; 
+    top: 1%; 
+}
+
+#PAPER{
+    background-image: url("img/paper.png");
+    left: 1%; 
+    top: 5%; 
+}
+
+#SCISSORS{
+    background-image: url("img/scissors.png");
+    left: 71%; 
+    top: -20%; 
+}
+
+#LIZARD{
+    background-image: url("img/lizard.png");
+    left: 20%; 
+    top: 0%; 
+}
+
+#SPOCK{
+    background-image: url("img/spock.png");
+    left: 60%; 
+    top: -26%; 
+}
+
+.center{
+    position: relative;
+    top: -75%;
+}
+
+.game-over{
+    display: none;
+    color: white;
+}
+
+footer{
+    margin: 20px 0px 5px;
+}
+
+.played{
+    display: flex;
+    justify-content: center;
+}
+
+#player-weapon, #computer-weapon{
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+#divider{
+    margin: 0 50px;
+}
+
+#description{
+    margin: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #title{
+        font-size: 25px;
+    }
+}
