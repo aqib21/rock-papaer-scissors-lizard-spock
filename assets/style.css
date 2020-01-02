@@ -108,6 +108,7 @@ section{
 
 footer{
     margin: 20px 0px 5px;
+    display: none;
 }
 
 .played{

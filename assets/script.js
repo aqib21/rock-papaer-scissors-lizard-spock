@@ -1,9 +1,9 @@
-let centerText = document.querySelector("#center-text");
-let icons = document.querySelectorAll(".icon");
-let choices = [];
+const choices = [];
+const MAX_SCORE = 5;
 let playerScore = 0;
 let computerScore = 0;
-const MAX_SCORE = 5;
+const centerText = document.querySelector("#center-text");
+const icons = document.querySelectorAll(".icon");
 
 icons.forEach(val =>{
     choices.push(val.id);
@@ -22,6 +22,8 @@ function changeText(event){
 }
 
 function iconClicked(event){
+    document.querySelector("footer").style.display = "block";
+
     let computerChoice = choose(choices);
     let playerChoice = event.target.id
 
