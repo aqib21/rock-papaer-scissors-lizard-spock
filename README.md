@@ -1,4 +1,4 @@
-Rock paper scissors lizard spock game from The Big Bang Theory!
+[Play the game!](https://aqib21.github.oi/rock-paper-scissors-lizard-spock)
 
 Scissors cuts Paper
 
